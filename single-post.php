@@ -17,6 +17,4 @@
 <p>There is no post</p>
 <?php endif;?>
 
-    <!-- <h1>This is from the index.php</h1> -->
-
 <?php get_footer(); ?>
