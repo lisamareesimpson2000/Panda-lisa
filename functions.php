@@ -27,4 +27,10 @@ require_once get_template_directory() . '/assets/class-wp-bootstrap-navwalker.ph
 
 //this will add in all the default styles that gutenberg use in WP
 add_theme_support ('wp-block-styles');
+//featured image dropdown on post right hand side
+add_theme_support('post-thumbnails');
+//upload image after writing this code. Otherwise it won't show up in th
+add_image_size('icon', 50, 50, true);
 
+//Monday - this adds post format in all posts, document, dropdown
+add_theme_support( 'post-formats', array( 'audio', 'video', 'image' ) );
