@@ -6,7 +6,7 @@
                 <div class="content">
                     <?php the_excerpt() ?>
                 </div>
-        <a class="btn btn-warning" href="<?php the_permalink(); ?>"> View Audi</a>
+        <a class="btn btn-warning" href="<?php the_permalink(); ?>"> View Audio</a>
         </div>
     </div>
 </div>

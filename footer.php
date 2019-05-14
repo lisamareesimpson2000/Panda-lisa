@@ -21,5 +21,8 @@ if ( has_nav_menu( 'header_menu' ) ) {
 </div>
 <?php wp_footer(); ?>
 <!-- <p>This is from footer.php</p> -->
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd8tqCdBxVYNB3t9EQK1r1HsNpn5dTMUo&callback=initMap"
+    async defer></script> -->
 </body>
 </html>

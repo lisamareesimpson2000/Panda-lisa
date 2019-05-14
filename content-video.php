@@ -23,5 +23,5 @@
 </div>
 
 
-    <p>This is a thumbnail post</p>
+    <!-- <p>This is a thumbnail post</p> -->
 <?php endif;?>

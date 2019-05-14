@@ -12,6 +12,8 @@ function add_custom_files(){
     wp_enqueue_script('jquery') ;
 
     wp_enqueue_script( 'my_bootstrap_script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '4.3.1', true);
+
+    // wp_enqueue_script('') ;
 };
 add_action('wp_enqueue_scripts', 'add_custom_files');
 //not closing php 
@@ -34,3 +36,25 @@ add_image_size('icon', 50, 50, true);
 
 //Monday - this adds post format in all posts, document, dropdown
 add_theme_support( 'post-formats', array( 'audio', 'video', 'image' ) );
+
+//register side bar to use widgets
+add_action( 'widgets_init', 'add_sidebar' );
+
+function add_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', '18wdwu07PandaLS' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', '18wdwu07PandaLS' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>',
+    ) );
+}
+
+function remove_calendar_widget() {
+	unregister_widget('WP_Widget_Calendar');
+}
+
+add_action( 'widgets_init', 'remove_calendar_widget' );
+
