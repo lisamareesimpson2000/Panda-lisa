@@ -52,9 +52,12 @@ function add_sidebar() {
     ) );
 }
 
-function remove_calendar_widget() {
-	unregister_widget('WP_Widget_Calendar');
-}
+// function remove_calendar_widget() {
+// 	unregister_widget('WP_Widget_Calendar');
+// }
 
-add_action( 'widgets_init', 'remove_calendar_widget' );
+// add_action( 'widgets_init', 'remove_calendar_widget' );
 
+
+
+require get_template_directory() . '/inc/custom_post_types.php';
