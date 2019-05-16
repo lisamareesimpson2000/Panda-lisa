@@ -36,7 +36,7 @@
 require get_template_directory() . '/events-template.php';
             $args = array(
                 'post_type' => 'event',
-                'post_type' => -1
+                'post_per_page' => 2
             );
             $allEvents = new WP_Query($args);
          ?>
