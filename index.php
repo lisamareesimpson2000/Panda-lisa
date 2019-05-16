@@ -13,8 +13,8 @@
             <hr>
     </div>
     <?php endwhile; ?>
-<?php else: ?>
-<p>There is no post</p>
+<?php /*else: */?>
+<!-- <p>There is no post</p> -->
 <?php endif;?>
 
     <!-- <h1>This is from the index.php</h1> -->

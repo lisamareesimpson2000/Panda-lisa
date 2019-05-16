@@ -36,7 +36,7 @@
 	<a class="navbar-brand" href="#">Navbar</a>
 		<?php
 		wp_nav_menu( array(
-			'theme_location'    => 'primary',
+			'theme_location'    => 'header_menu',
 			'depth'             => 2,
 			'container'         => 'div',
 			'container_class'   => 'collapse navbar-collapse',

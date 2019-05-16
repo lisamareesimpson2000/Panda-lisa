@@ -3,11 +3,6 @@
 // die('this is from custom post types');
 
 function add_event_post_type(){
-
-
-
-    $args = array(
-        'labels' => array(
             $labels = array(
                 'name'               => _x( 'Events', 'post type general name', '18wdwu07PandaLS' ),
                 'singular_name'      => _x( 'Event', 'post type singular name', '18wdwu07PandaLS' ),
@@ -29,19 +24,15 @@ function add_event_post_type(){
                 'labels' => $labels,
                 'description' => 'A list of events which will be held',
                 'public' => true,
-                'show_in_nav_menus' => false
+                'show_in_nav_menus' => false,
                 'menu_position' => 6,
-                'menu_icon'=> 'dashboard-tickets',
-                'support' => 'thumbnail'
+                'show_in_rest' => true, //to show the gutenberg editor
+                'menu_icon'=> 'dashicons-tickets',
+                'supports' => array('title', 'editor') //'support' =>'thumbnail'
                 
             );
-        )
-
-    )
-
-
+            //line that is registering post type, use event not events as it may muck up things later when the user creates events
     register_post_type('event', $args);
-
 }
 add_action('init', 'add_event_post_type');
 

@@ -28,7 +28,25 @@
     <?php endif;?>
 
 
-</div>
+</div> 
+
+
+<!-- Adding the next two events and staff -->
+<?php
+require get_template_directory() . '/events-template.php';
+            $args = array(
+                'post_type' => 'event',
+                'post_type' => -1
+            );
+            $allEvents = new WP_Query($args);
+         ?>
+
+
+
+
+
+
+
 
 
 <?php get_footer(); ?>

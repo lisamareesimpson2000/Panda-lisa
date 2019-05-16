@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<p>you are on page.php</p>
 <?php if( have_posts() ):?>
     <?php while( have_posts() ): the_post();?>
     <div class="">

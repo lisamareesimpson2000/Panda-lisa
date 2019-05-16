@@ -61,3 +61,4 @@ function add_sidebar() {
 
 
 require get_template_directory() . '/inc/custom_post_types.php';
+//could make a widget this way too to split up the files and make it easier to read
