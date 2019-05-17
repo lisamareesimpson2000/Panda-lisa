@@ -33,10 +33,12 @@
 
 <!-- Adding the next two events and staff -->
 <?php
-require get_template_directory() . '/events-template.php';
+// require get_template_directory() . '/events-template.php';
             $args = array(
                 'post_type' => 'event',
-                'post_per_page' => 2
+                'posts_per_page' => 2 //-1 give me everything. 0 means give me 1. 
+                //'order' => 'ASC',
+                //'orderby' => 'date'
             );
             $allEvents = new WP_Query($args);
          ?>
