@@ -26,8 +26,9 @@
 
 
 </div> -->
-
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<header>
+	<?php echo get_theme_mod('custom_header_colour_setting');?>
+<nav class="navbar navbar-expand-md navbar-light navColour" role="navigation">
   <div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,5 +49,5 @@
 		?>
 	</div>
 </nav>
-
+</header>
 <!-- <p>This is from header.php</p> -->
